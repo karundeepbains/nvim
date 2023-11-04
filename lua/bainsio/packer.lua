@@ -27,4 +27,5 @@ return require('packer').startup(function(use)
     use("github/copilot.vim") -- github copilot
     use("tpope/vim-fugitive") -- git commands in nvim
     use("nvim-treesitter/nvim-treesitter-context") -- show context of code (keeps the function name visable)
+    use("christoomey/vim-tmux-navigator") -- navigate between tmux panes and vim splits
 end)
