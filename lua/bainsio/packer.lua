@@ -10,7 +10,6 @@ return require('packer').startup(function(use)
     use {
         -- fuzzy finder and shows files in list
         'nvim-telescope/telescope.nvim', tag = '0.1.4',
-        -- or                            , branch = '0.1.x',
         requires = { {'nvim-lua/plenary.nvim'} }
     }
 
@@ -28,4 +27,11 @@ return require('packer').startup(function(use)
     use("tpope/vim-fugitive") -- git commands in nvim
     use("nvim-treesitter/nvim-treesitter-context") -- show context of code (keeps the function name visable)
     use("christoomey/vim-tmux-navigator") -- navigate between tmux panes and vim splits
+
+    -- sidebar filebrowser 
+    use {
+      'nvim-tree/nvim-tree.lua',
+      requires = { 'nvim-tree/nvim-web-devicons' },
+    }
+    
 end)
