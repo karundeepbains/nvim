@@ -10,6 +10,9 @@ return {
         light = "latte",
         dark = "mocha",
       },
+      integrations = {
+        treesitter = true,
+      },
     })
 
     vim.cmd("colorscheme catppuccin")
